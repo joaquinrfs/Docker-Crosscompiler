@@ -1,0 +1,7 @@
+version: "3"
+services:
+  compile:
+    build: .
+    volumes:
+      - ./bin:/srv/bin
+    command: sh src/compile.sh
